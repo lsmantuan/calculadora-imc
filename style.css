@@ -29,15 +29,18 @@ main {
     text-transform: uppercase;
     letter-spacing: 0.7em;
     margin: 15px 0 0 0;
+    transform: skew(0deg, -5deg);
 }
 
 .tituloGrande {
     font-size: 8.5em;
-    font-weight: 100;
-    color: rgb(80, 80, 80);
+    font-weight: 400;
+    color: hsl(210, 20%, 90%);
     text-align: center;
     text-transform: uppercase;
     margin: -20px 0 -20px 0;
+    text-shadow: hsl(207, 23%, 34%) 5px 5px, rgba(0, 0, 0, 0.2) 10px 10px;
+    transform: skew(0deg, -5deg);
 }
 
 .textoPadrao {
@@ -49,35 +52,51 @@ main {
 
 .campoPadrao {
     font-size: 1em;
+    font-weight: 500;
     color: rgb(80, 80, 80);
     border: rgb(160, 160, 160) solid 0.5px;
-    height: 30px;
+    height: 35px;
     margin: 10px 0 0 0;
     padding: 0 10px 0 10px;
     border-radius: 5px;
     background-color: rgb(245, 245, 245);
+}
+
+.campoPadrao:hover {
+    outline: none;
+    background-color: rgb(230, 230, 230);
+}
+
+.campoPadrao:focus {
+    outline: none;
+    background-color: rgb(230, 230, 230);
+}
+
+.campoErro {
+    font-size: 1em;
     font-weight: 500;
+    color: rgb(80, 80, 80);
+    border: rgb(255, 0, 0) solid 0.5px;
+    height: 35px;
+    margin: 10px 0 0 0;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0);
+}
+
+.botaoPadrao {
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border: rgb(160, 160, 160) solid 0.5px;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(110, 140, 165);
+    
 }
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
-}
-
-input:hover {
-    outline: none;
-    background-color: rgb(230, 230, 230);
-}
-
-input:focus {
-    outline: none;
-    background-color: rgb(230, 230, 230);
-}
-
-input.erro {
-    border: red 5px solid;
-}
-
-input.normal {
-    border: royalblue 5px solid;
 }

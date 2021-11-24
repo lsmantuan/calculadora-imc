@@ -11,12 +11,12 @@ var view = {
 
     exibirErro: function(erro) {
         var erroDigitacao = document.getElementById(erro);
-        erroDigitacao.setAttribute("class", "erro");
+        erroDigitacao.setAttribute("class", "campoErro");
     },
 
     limparErro: function(erro) {
         var limparDigitacao = document.getElementById(erro);
-        limparDigitacao.setAttribute("class", "normal");
+        limparDigitacao.setAttribute("class", "campoPadrao");
     }
 };
 
@@ -44,10 +44,10 @@ var model = {
 
 var controller = {
     analisarPesoAltura: function(peso, altura) {
-        var formatacaoPeso = new RegExp(/^[0-9]{1,3},?.?\d{0,2}$/);
+        var formatacaoPeso = new RegExp(/^\d{1,3}[.,]?\d{0,2}$/);
         var resultadoFormatacaoPeso = peso.match(formatacaoPeso);
 
-        var formatacaoAltura = new RegExp(/^[0-2]{1},?.?\d{0,2}$/);
+        var formatacaoAltura = new RegExp(/^[0-2]{1}[.,]?\d{0,2}$/);
         var resultadoFormatacaoAltura = altura.match(formatacaoAltura);
         
         if ((resultadoFormatacaoPeso !== null) && (resultadoFormatacaoAltura !== null)) {
