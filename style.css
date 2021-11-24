@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: radial-gradient(circle, rgb(220, 230, 240), rgb(110, 140, 165));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(70, 90, 110, 0.7) 5px 5px 10px;
+    border-radius: 5px;
+    width: 300px;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tituloPequeno {
+    font-size: 0.75em;
+    font-weight: 900;
+    color: rgb(120, 120, 120);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.7em;
+    margin: 15px 0 0 0;
+}
+
+.tituloGrande {
+    font-size: 8.5em;
+    font-weight: 100;
+    color: rgb(80, 80, 80);
+    text-align: center;
+    text-transform: uppercase;
+    margin: -20px 0 -20px 0;
+}
+
+.textoPadrao {
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.campoPadrao {
+    font-size: 1em;
+    color: rgb(80, 80, 80);
+    border: rgb(160, 160, 160) solid 0.5px;
+    height: 30px;
+    margin: 10px 0 0 0;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245);
+    font-weight: 500;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+}
+
+input:hover {
+    outline: none;
+    background-color: rgb(230, 230, 230);
+}
+
+input:focus {
+    outline: none;
+    background-color: rgb(230, 230, 230);
+}
+
+input.erro {
+    border: red 5px solid;
+}
+
+input.normal {
+    border: royalblue 5px solid;
+}

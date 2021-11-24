@@ -9,9 +9,14 @@ var view = {
         sobre.innerHTML = msg;
     },
 
-    exibirErro: function(msg) {
-        var sobre = document.getElementById("erro");
-        sobre.innerHTML = msg;
+    exibirErro: function(erro) {
+        var erroDigitacao = document.getElementById(erro);
+        erroDigitacao.setAttribute("class", "erro");
+    },
+
+    limparErro: function(erro) {
+        var limparDigitacao = document.getElementById(erro);
+        limparDigitacao.setAttribute("class", "normal");
     }
 };
 
@@ -24,7 +29,7 @@ var model = {
 
     processarSobre: function(imc) {
         if (imc < 18.5) {
-            view.exibirSobre(" ");
+            view.exibirSobre("Abaixo do Peso");
         } else if (imc < 24.9) {
             view.exibirSobre("Normal");
         } else if (imc < 29.9) {
@@ -49,18 +54,10 @@ var controller = {
             model.calcularResultado(peso, altura)
         } else {
             if (resultadoFormatacaoPeso === null) {
-                view.exibirErro("Erro Peso");
-                console.log("Peso")
-                console.log(resultadoFormatacaoPeso)      
-                console.log(peso) 
-                console.log(altura)               
-            } else if (resultadoFormatacaoAltura === null) {
-                view.exibirErro("Erro Altura");
-                console.log("Altura")
-                console.log(resultadoFormatacaoPeso)  
-                console.log(resultadoFormatacaoAltura) 
-                console.log(peso) 
-                console.log(altura)                
+                view.exibirErro("peso");
+            };
+            if (resultadoFormatacaoAltura === null) {
+                view.exibirErro("altura");
             };
         };        
     }
@@ -72,4 +69,22 @@ function calcularIMC() {
     var alturaInformada = document.getElementById("altura");
     var altura = alturaInformada.value;
     controller.analisarPesoAltura(peso, altura);
+};
+
+function limparIMC() {
+    var pesoInformado = document.getElementById("peso");
+    pesoInformado.value = "";
+    var alturaInformada = document.getElementById("altura");
+    alturaInformada.value = "";
+    view.exibirResultado("00.00");
+    view.exibirSobre("Sobre o seu IMC:");
+    view.limparErro("peso");
+    view.limparErro("altura");
+    limparInput();
+};
+
+function limparInput() {
+    var inputAlvo = document.getElementsByClassName("normal");
+    inputAlvo[0].onfocus = "teste";
+    console.log(inputAlvo);
 }

@@ -10,16 +10,20 @@
 <body>
     <main>
         <header>
-            <h1>Calculadora de</h1>
-            <h1>IMC</h1>
+            <h1 class="tituloPequeno">Calculadora de</h1>
+            <h1 class="tituloGrande">IMC</h1>
         </header>
         <section>
-            <p>Para calcular seu IMC digite o seu peso (kg) e altura (m) e clique no botão Calcular!</p>
+            <p class="textoPadrao">Para calcular seu Índice de Massa Corporal (IMC) digite o seu <strong>peso</strong> (kg) e <strong>altura</strong> (m) e clique no botão Calcular!</p>
             <form>
-                <input type="number" name="peso" id="peso" placeholder="Peso (kg)">
-                <input type="number" name="altura" id="altura" placeholder="Altura (m)">
-                <input type="button" value="Calcular" onclick="calcularIMC()">
-                <p id="erro"></p>
+                <p>
+                    <input type="number" name="peso" id="peso" class="campoPadrao" placeholder="Peso">
+                    <input type="number" name="altura" id="altura" class="campoPadrao" placeholder="Altura">
+                </p>
+                <p>
+                    <input type="button" value="Calcular" onclick="calcularIMC()">
+                    <input type="button" value="Limpar" onclick="limparIMC()">
+                </p>
             </form>
             <p>Seu IMC é</p>
             <div id="resultado">00.00</div>
