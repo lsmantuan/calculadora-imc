@@ -13,8 +13,8 @@ main {
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(70, 90, 110, 0.7) 5px 5px 10px;
     border-radius: 5px;
-    width: 300px;
-    padding: 15px;
+    width: 400px;
+    padding: 30px 15px 15px 15px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -29,26 +29,97 @@ main {
     text-transform: uppercase;
     letter-spacing: 0.7em;
     margin: 15px 0 0 0;
-    transform: skew(0deg, -5deg);
+    transform: skew(0deg, -2deg);
 }
 
 .tituloGrande {
     font-size: 8.5em;
     font-weight: 400;
-    color: hsl(210, 20%, 90%);
+    color: rgb(225, 230, 235);
     text-align: center;
     text-transform: uppercase;
     margin: -20px 0 -20px 0;
-    text-shadow: hsl(207, 23%, 34%) 5px 5px, rgba(0, 0, 0, 0.2) 10px 10px;
-    transform: skew(0deg, -5deg);
+    text-shadow: rgb(70, 90, 110) 5px 5px, rgba(0, 0, 0, 0.2) 10px 10px;
+    transform: skew(0deg, -2deg);
 }
 
-.textoPadrao {
+.textoChamada{
+    font-size: 1em;
     font-weight: 300;
     letter-spacing: 0.03em;
     text-align: center;
     line-height: 1.5em;
 }
+
+.caixaResultado {
+    border: rgb(70, 90, 110) solid 1px;
+    border-radius: 15px;
+    padding: 40px 15px 15px 40px;
+    width: 295px;
+    margin: 50px 0 0 45px;
+    position: relative;
+}
+
+.imagemResultado {
+    width: 40px;
+    height: 93px;
+    background-image: url(imagens/normal-inativo.png);
+    background-repeat: no-repeat;
+    border: rgb(70, 90, 110) solid 1px;
+    float: left;
+    position: absolute;
+    left: -15px;
+    top: -30px;
+}
+
+.textoChamadaDescricao {
+    font-size: 0.95em;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    line-height: 1.1em;
+    border: rgb(70, 90, 110) solid 1px;
+    float: left;
+}
+
+.textoIMC {
+    font-size: 4em;
+    font-weight: 700;
+    color: rgb(70, 90, 110);;
+    letter-spacing: -0.05em;
+    margin: 0 0 0 10px;
+    border: rgb(70, 90, 110) solid 1px;
+    float: left;
+    position: relative;
+    top: -30px;
+}
+
+.textoDescricao {
+    font-size: 0.95em;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    line-height: 1.1em;
+    border: rgb(70, 90, 110) solid 1px;
+    float: left;
+    clear: both;
+}
+
+.textoRodape {
+    font-size: 0.7em;
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+
+
+
+
+
 
 .campoPadrao {
     font-size: 1em;
@@ -56,7 +127,8 @@ main {
     color: rgb(80, 80, 80);
     border: rgb(160, 160, 160) solid 0.5px;
     height: 35px;
-    margin: 10px 0 0 0;
+    width: 80px;
+    margin: 10px 10px 0 0;
     padding: 0 10px 0 10px;
     border-radius: 5px;
     background-color: rgb(245, 245, 245);
@@ -78,25 +150,39 @@ main {
     color: rgb(80, 80, 80);
     border: rgb(255, 0, 0) solid 0.5px;
     height: 35px;
-    margin: 10px 0 0 0;
+    width: 80px;
+    margin: 10px 10px 0 0;
     padding: 0 10px 0 10px;
     border-radius: 5px;
     background-color: rgb(255, 0, 0);
 }
 
 .botaoPadrao {
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 600;
     color: rgb(255, 255, 255);
     border: rgb(160, 160, 160) solid 0.5px;
-    height: 40px;
-    width: 100px;
+    height: 35px;
+    width: 80px;
+    margin: 0 10px 0 0;
     border-radius: 5px;
     background-color: rgb(110, 140, 165);
-    
+}
+
+.botaoPadrao:hover {
+    box-shadow: 0 0 8px rgb(160, 160, 160);
+}
+
+.botaoPadrao:active {
+    background-color: rgb(70, 90, 110);
+}
+
+.formulario {
+    text-align: center;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
 }
+

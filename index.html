@@ -14,27 +14,29 @@
             <h1 class="tituloGrande">IMC</h1>
         </header>
         <section>
-            <p class="textoPadrao">Para calcular seu Índice de Massa Corporal (IMC) digite o seu <strong>peso</strong> (kg) e <strong>altura</strong> (m) e clique no botão Calcular!</p>
+            <p class="textoChamada">Para calcular seu Índice de Massa Corporal (IMC) digite o seu <strong>peso</strong> (kg) e <strong>altura</strong> (m) e clique no botão Calcular.</p>
             <form>
-                <p>
+                <p class="formulario">
                     <input type="number" name="peso" id="peso" class="campoPadrao" placeholder="Peso">
                     <input type="number" name="altura" id="altura" class="campoPadrao" placeholder="Altura">
                 </p>
-                <p>
+                <p class="formulario">
                     <input type="button" value="Calcular" class="botaoPadrao" onclick="calcularIMC()">
                     <input type="button" value="Limpar" class="botaoPadrao" onclick="limparIMC()">
                 </p>
             </form>
-            <p>Seu IMC é</p>
-            <div id="resultado">00.00</div>
         </section>
         <section>
-            <div>
-                <p id="sobre">Sobre o seu IMC:</p>
+            <div class="caixaResultado">
+                <div class="imagemResultado"></div>
+                <div class="textoChamadaDescricao">Seu IMC é: </div>
+                <div id="imc" class="textoIMC">0.00</div>
+                <div id="sobre" class="textoDescricao">Descrição</div>
+                <div class="clear"></div>
             </div>
         </section>
         <footer>
-            <h6>&copy; Lucas Mantuan</h6>
+            <p class="textoRodape">&copy; Lucas Mantuan</p>
         </footer>
     </main>
     <script src="script.js"></script>

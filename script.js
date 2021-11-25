@@ -1,6 +1,6 @@
 var view = {
     exibirResultado: function(msg) {
-        var resultado = document.getElementById("resultado");
+        var resultado = document.getElementById("imc");
         resultado.innerHTML = msg;
     },
     
@@ -76,8 +76,8 @@ function limparIMC() {
     pesoInformado.value = "";
     var alturaInformada = document.getElementById("altura");
     alturaInformada.value = "";
-    view.exibirResultado("00.00");
-    view.exibirSobre("Sobre o seu IMC:");
+    view.exibirResultado("0");
+    view.exibirSobre("O que seu IMC significa?");
     view.limparErro("peso");
     view.limparErro("altura");
     limparInput();
