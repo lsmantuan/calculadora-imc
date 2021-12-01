@@ -1,22 +1,26 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-body {
+.container {
     font-family: 'Roboto', sans-serif;
     background-image: radial-gradient(circle, rgb(220, 230, 240), rgb(110, 140, 165));
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
+    position: relative;
+    height: 98vh;
 }
 
-main {
+.conteudo {
+    position: absolute;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(70, 90, 110, 0.7) 5px 5px 10px;
     border-radius: 5px;
     max-width: 400px;
     width: 80%;
     padding: 20px 15px 15px 15px;
-    margin: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .tituloPequeno {
