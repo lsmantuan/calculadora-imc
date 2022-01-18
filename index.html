@@ -5,40 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="container">
-    <main class="conteudo">
-        <header>
-            <h1 class="tituloPequeno">Calculadora de</h1>
-            <h1 class="tituloGrande">IMC</h1>
-        </header>
-        <section>
-            <p class="textoChamada">Para descobrir o IMC digite seu <strong>peso</strong> (kg) e <strong>altura</strong> (m) e clique em Calcular.</p>
-            <form>
-                <p class="formulario">
-                    <input type="number" name="peso" id="peso" class="campoPadrao" placeholder="Peso">
-                    <input type="number" name="altura" id="altura" class="campoPadrao" placeholder="Altura">
-                </p>
-                <p class="formulario">
-                    <input type="button" value="Calcular" class="botaoPadrao" onclick="calcularIMC()">
-                    <input type="button" value="Limpar" class="botaoPadrao" onclick="limparIMC()">
-                </p>
-            </form>
+<body>
+    <section class="container">
+        <section class="conteudo">
+            <header>
+                <h1 class="tituloPequeno">Calculadora de</h1>
+                <h1 class="tituloGrande">IMC</h1>
+            </header>
+            <section>
+                <p class="textoChamada">Digite seu <strong>peso</strong> (kg) e <strong>altura</strong> (m) e para calcular seu IMC.</p>
+                <form>
+                    <p class="formulario">
+                        <input type="number" id="peso" class="campoPadrao" placeholder="Peso">
+                        <input type="number" id="altura" class="campoPadrao" placeholder="Altura">
+                    </p>
+                    <p class="formulario">
+                        <input type="button" value="Limpar" class="botaoPadrao" onclick="limparIMC()">
+                        <input type="button" value="Calcular" class="botaoPadrao" onclick="calcularIMC()">
+                    </p>
+                </form>
+            </section>
+            <section>
+                <div class="caixaResultado">
+                    <div id="imagem" class="imagemPadrao"></div>
+                    <div id="imc" class="textoIMC">0</div>
+                    <div id="titulo" class="tituloDescricao clear">IMC</div>
+                    <div id="sobre" class="textoDescricao clear">Descubra o seu Índice de Massa Corporal (IMC) digitando seu peso (kg) e altura (m) e em seguida clicando no botão Calcular.</div>
+                </div>
+            </section>
+            <footer>
+                <p class="textoRodape">&copy; Lucas Mantuan</p>
+            </footer>
         </section>
-        <section>
-            <div class="caixaResultado">
-                <div id="imagem" class="imagemPadrao"></div>
-                <div id="imc" class="textoIMC">0</div>
-                <div id="titulo" class="tituloDescricao clear">IMC</div>
-                <div id="sobre" class="textoDescricao clear">Descubra o seu Índice de Massa Corporal (IMC) digitando seu peso (kg) e altura (m) e em seguida clicando no botão calcular!</div>
-                <div class="clear"></div>
-            </div>
-        </section>
-        <footer>
-            <p class="textoRodape">&copy; Lucas Mantuan</p>
-        </footer>
-    </main>
-    <script src="script.js"></script>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>

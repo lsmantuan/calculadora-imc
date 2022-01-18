@@ -23,7 +23,7 @@ var view = {
 
     alterarImagem: function(tipo) {
         var imagem = document.getElementById("imagem");
-        imagem.style.backgroundImage = "url(imagens/" + tipo + ".png)";
+        imagem.style.backgroundImage = "url(/imagens/" + tipo + ".png)";
     }
 };
 
@@ -36,16 +36,16 @@ var model = {
 
     processarSobre: function(imc) {
         if (imc < 18.5) {
-            view.exibirSobre("Abaixo do Normal", "Procure um médico. Algumas pessoas têm um baixo peso por características do seu organismo e tudo bem. Outras podem estar enfrentando problemas, como a desnutrição. É preciso saber qual é o caso.");
+            view.exibirSobre("Abaixo do Normal", "Procure um médico. Algumas pessoas têm um baixo peso por características do seu organismo e tudo bem, mas outras podem estar enfrentando problemas.");
             view.alterarImagem("abaixo");
         } else if (imc < 24.9) {
             view.exibirSobre("Normal", "Que bom que você está com o peso normal! E o melhor jeito de continuar assim é mantendo um estilo de vida ativo e uma alimentação equilibrada.");
             view.alterarImagem("normal");
         } else if (imc < 29.9) {
-            view.exibirSobre("Sobrepeso", "Ele é, na verdade, uma pré-obesidade e muitas pessoas nessa faixa já apresentam doenças associadas, como diabetes e hipertensão. Importante rever hábitos e buscar ajuda antes de, por uma série de fatores, entrar na faixa da obesidade pra valer.");
+            view.exibirSobre("Sobrepeso", "Ele é, na verdade, uma pré-obesidade e muitas pessoas nessa faixa já apresentam doenças associadas, como diabetes e hipertensão.");
             view.alterarImagem("sobrepeso");
         } else if (imc < 34.9) {
-            view.exibirSobre("Obesidade Grau I", "Sinal de alerta! Chegou na hora de se cuidar, mesmo que seus exames sejam normais. Vamos dar início a mudanças hoje! Cuide de sua alimentação. Você precisa iniciar um acompanhamento com nutricionista e/ou endocrinologista.");
+            view.exibirSobre("Obesidade Grau I", "Sinal de alerta! Chegou na hora de se cuidar, mesmo que seus exames sejam normais. Vamos dar início a mudanças hoje! Cuide de sua alimentação.");
             view.alterarImagem("obesidade");
         } else if (imc < 39.9) {
             view.exibirSobre("Obesidade Grau II", "Mesmo que seus exames aparentem estar normais, é hora de se cuidar, iniciando mudanças no estilo de vida com o acompanhamento próximo de profissionais de saúde.");            
