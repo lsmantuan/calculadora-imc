@@ -23,7 +23,7 @@ var view = {
 
     alterarImagem: function(tipo) {
         var imagem = document.getElementById("imagem");
-        imagem.style.backgroundImage = "url(../imagens/" + tipo + ".png)";
+        imagem.style.backgroundImage = "url(/calculadora-imc/imagens/" + tipo + ".png)";
     }
 };
 
