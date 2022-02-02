@@ -18,8 +18,8 @@
                 <p class="textoChamada">Digite seu <strong>peso</strong> (kg) e <strong>altura</strong> (m) para calcular seu IMC.</p>
                 <form>
                     <p class="formulario">
-                        <input type="number" id="peso" class="campoPadrao" placeholder="Peso">
-                        <input type="number" id="altura" class="campoPadrao" placeholder="Altura">
+                        <input type="number" id="peso" class="campoPadrao" min="1" max="399" step="0.01" placeholder="Peso">
+                        <input type="number" id="altura" class="campoPadrao" min="0.01" max="2.99" step="0.01" placeholder="Altura">
                     </p>
                     <p class="formulario">
                         <input type="button" value="Limpar" class="botaoPadrao" onclick="limparIMC()">

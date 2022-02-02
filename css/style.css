@@ -140,7 +140,7 @@ body {
 .imagemPadrao {
     width: 58px;
     height: 100px;
-    background-image: url(../imagens/inativo.png);
+    background-image: url(/imagens/inativo.png);
     background-size: 100%;
     background-repeat: no-repeat;
     transition: 300ms;
