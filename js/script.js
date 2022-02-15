@@ -59,7 +59,7 @@ var model = {
 
 var controller = {
     analisarPesoAltura: function(peso, altura) {
-        var formatacaoPeso = new RegExp(/^[0-3][.,]?\d{0,2}$/);
+        var formatacaoPeso = new RegExp(/^[0-9][.,]?\d{0,2}$/);
         var resultadoFormatacaoPeso = formatacaoPeso.test(peso);
 
         var formatacaoAltura = new RegExp(/^[0-2]{1}[.,]?\d{0,2}$/);
