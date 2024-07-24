@@ -1,3 +1,3 @@
 # Calculadora de Índice de Massa Corporal
- 
-No primeiro mini-projeto realizado, procurei trabalhar com o padrão de desenvolvimento MVC, além de explorar os conceitos de POO. Também coloquei em prática o conhecimento aprendido em RegExp.
+
+Durante a fase de estudos de frontend, foram desenvolvidos vários projetos, como um Catálogo de Livros, uma Calculadora de Índice de Massa Corporal, um Cronômetro e um Jogo da Memória. Todos utilizam a abordagem com ênfase no design responsivo.
